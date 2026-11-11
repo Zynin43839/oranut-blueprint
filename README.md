@@ -9,14 +9,17 @@
 
 ## ขอบเขตของ repo นี้
 
-repo นี้เป็นบ้านของงานวิเคราะห์ระบบทั้งหมด ได้แก่ case study, คลังเอกสาร 25 ฉบับ
-(ไทยและอังกฤษ), เด็ค 22 สไลด์สองภาษา และไฟล์ ZIP สำหรับดาวน์โหลด
+repo นี้เป็นบ้านของงานวิเคราะห์ธุรกิจ 14 ฉบับ (ไทยและอังกฤษ) ได้แก่ case study,
+product brief, stakeholder matrix, AS-IS/TO-BE, SRS, user stories, use cases,
+business rules, traceability matrix, UAT, roadmap, change request log และ glossary
+พร้อมเด็ค 22 สไลด์สองภาษาและไฟล์ ZIP สำหรับดาวน์โหลด
 
 สิ่งที่อยู่ที่อื่น
 
 | เนื้อหา | อยู่ที่ |
 | --- | --- |
 | โค้ดของแอป RAG-Diary | repo `rag-diary` |
+| งานออกแบบระบบ 11 ฉบับ | repo `sa-portfolio` |
 | พอร์ตสาย Web dev (ธีม Star space) | repo `Space-Portfolio` |
 | ต้นฉบับเอกสาร Markdown | โปรเจกต์ RAG-Diary โฟลเดอร์ `docs/` |
 
