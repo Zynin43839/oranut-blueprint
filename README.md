@@ -1,38 +1,45 @@
 # Portfolio (BA / SA)
 
-เว็บพอร์ตโฟลิโอแบบ static ไม่ต้อง build ใช้ HTML + CSS + JavaScript ล้วน
-ออกแบบให้ deploy ขึ้น Vercel ได้ทันที
+เว็บพอร์ตโฟลิโอสาย Business Analyst / System Analyst แบบ static ไม่ต้อง build
+ใช้ HTML + CSS + JavaScript ล้วน และ deploy ขึ้น Vercel ได้ทันที
 
-## ก่อนเผยแพร่: แทนที่ข้อมูลส่วนตัว
+- ฉบับไทย: https://oranut-ba-portfolio.vercel.app
+- ฉบับอังกฤษ: https://oranut-ba-portfolio.vercel.app/en/
+- พอร์ตสาย Web dev (แยกกันคนละเว็บ): https://dao-portfolio-space.vercel.app
 
-ข้อมูลส่วนตัวถูกกรอกครบแล้ว (ชื่อ, อีเมล, LinkedIn, GitHub) — แก้ได้ที่ `index.html` หากมีการเปลี่ยนแปลง
+## ขอบเขตของ repo นี้
 
-| จุดที่แก้ | ตำแหน่ง |
+repo นี้เป็นบ้านของงานวิเคราะห์ระบบทั้งหมด ได้แก่ case study, คลังเอกสาร 25 ฉบับ
+(ไทยและอังกฤษ), เด็ค 22 สไลด์สองภาษา และไฟล์ ZIP สำหรับดาวน์โหลด
+
+สิ่งที่อยู่ที่อื่น
+
+| เนื้อหา | อยู่ที่ |
 | --- | --- |
-| ชื่อ-นามสกุล | `<title>`, `brand-text`, `h1` ใน hero, footer |
-| อีเมล | ลิงก์ `mailto:` ในส่วนติดต่อ |
-| LinkedIn / GitHub | `<a href="#">` ในส่วนติดต่อ (ใส่ URL จริง) |
-
-คำอธิบายโครงการ ตัวเลข และเอกสารอ้างอิงจาก `docs/` จริง ไม่ต้องแก้ เว้นแต่เอกสารเปลี่ยน
+| โค้ดของแอป RAG-Diary | repo `rag-diary` |
+| พอร์ตสาย Web dev (ธีม Star space) | repo `Space-Portfolio` |
+| ต้นฉบับเอกสาร Markdown | โปรเจกต์ RAG-Diary โฟลเดอร์ `docs/` |
 
 ## โครงสร้าง
 
 ```
-portfolio/
-├── index.html          หน้าเดียวจบ
+ba-portfolio/
+├── index.html          หน้าภาษาไทย
+├── en/index.html       หน้าภาษาอังกฤษ
 ├── styles.css          ธีม Marginalia (กระดาษและหมึก)
 ├── script.js           เมนูมือถือ, reveal on scroll, lightbox
 ├── vercel.json         ตั้งค่า cache และ clean URLs
 └── assets/
-    ├── media/          คลิป 30 วิ, เด็ค PPTX/HTML, ZIP เอกสาร
-    ├── docs/           PDF 25 ฉบับ (D-00 ถึง D-24)
+    ├── docs/           PDF ไทย 25 ฉบับ (D-00 ถึง D-24)
+    ├── docs/en/        PDF อังกฤษ 25 ฉบับ
+    ├── media/          คลิป 30 วิ, เด็ค 2 ภาษา, ZIP 2 ภาษา
     └── img/            ภาพหน้าจอและแผนภาพ
 ```
 
 ## ดูในเครื่อง
 
 ```powershell
-cd portfolio
+cd ba-portfolio
 python -m http.server 8080
 # เปิด http://localhost:8080
 ```
@@ -40,17 +47,23 @@ python -m http.server 8080
 ## Deploy ขึ้น Vercel
 
 ```powershell
-# ครั้งแรก
-npm i -g vercel
-vercel login
-
-# deploy จากโฟลเดอร์นี้
-cd portfolio
-vercel --prod
+npx vercel --prod
 ```
 
-หรือกำหนด Root Directory เป็น `portfolio` ในหน้า Vercel Dashboard
-(ไม่ต้องมี build command, output = โฟลเดอร์นี้)
+โปรเจกต์บน Vercel ชื่อ `oranut-ba-portfolio` (ผูกไว้ใน `.vercel/project.json` แล้ว)
+
+## อัปเดตเอกสารและเด็ค
+
+เอกสารทั้งหมดสร้างจากโปรเจกต์ RAG-Diary แล้วคัดลอกมาที่ repo นี้
+
+```powershell
+cd ../RAG-Diary
+python scripts/build_docs_pdf.py            # PDF ไทย
+python scripts/build_docs_pdf.py --en       # PDF อังกฤษ
+python scripts/sync_portfolio_assets.py     # คัดลอก PDF + rebuild ZIP ทั้งสองภาษา
+```
+
+เด็คสร้างจาก `output/presentation` ในโปรเจกต์เดียวกัน แล้วคัดลอกมาไว้ที่ `assets/media/`
 
 ## หมายเหตุคุณภาพ
 
@@ -58,3 +71,4 @@ vercel --prod
 - รองรับคีย์บอร์ด มี skip link และโฟกัสมองเห็นชัด
 - เคารพ `prefers-reduced-motion`
 - ภาพมี alt text และโหลดแบบ lazy
+- ลิงก์ภายในทุกเส้นตรวจแล้วว่าไฟล์ปลายทางมีจริง
