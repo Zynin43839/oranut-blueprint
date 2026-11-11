@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oranut Suphatamat (Dao) | Business Analyst</title>
-  <meta name="description" content="BA portfolio with a 14-document analysis set and a working product." />
+  <title>Oranut Suphatamat (Dao) | Business Analyst / System Analyst</title>
+  <meta name="description" content="BA/SA portfolio with a 25-document analysis set and a working product." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -22,6 +22,7 @@
       <nav class="site-nav" id="site-nav" aria-label="Main menu">
         <a href="#about">About</a>
         <a href="#work">Work</a>
+        <a href="#design">Design</a>
         <a href="#experience">Experience</a>
         <a href="#method">Method</a>
         <a href="#docs">Documents</a>
@@ -38,12 +39,12 @@
   <main id="main">
     <section class="hero wrap" id="top">
       <div class="hero-copy">
-        <p class="kicker">Portfolio · Business Analyst</p>
+        <p class="kicker">Portfolio · Business Analyst / System Analyst</p>
         <h1>Oranut Suphatamat (Dao)</h1>
         <p class="hero-lead">
-          A business analyst who also builds the system: from eliciting requirements and defining
-          acceptance criteria through to acceptance testing and change control. The system design work
-          has its own portfolio.
+          A business analyst and system analyst who also builds the system: from eliciting
+          requirements and defining acceptance criteria through to the architecture, the data model
+          and the privacy boundary.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#work">See the RAG-Diary project</a>
@@ -54,7 +55,7 @@
       <aside class="hero-card" aria-label="Verifiable highlights">
         <p class="card-label">Verifiable highlights</p>
         <ul class="check-list">
-          <li>14 BA documents, every requirement traced, in Thai and English</li>
+          <li>25 documents, D-00 to D-24, every requirement traced</li>
           <li>Requirements traced to test cases with 100% coverage</li>
           <li>Built on ISO/IEC/IEEE 29148 and ISO/IEC 25010</li>
           <li>A running system with Next.js, Elysia, Supabase and Google Gemini</li>
@@ -64,7 +65,7 @@
     </section>
 
     <section class="metrics wrap" aria-label="Summary figures">
-      <div class="metric"><span class="metric-num">14</span><span class="metric-label">BA documents</span></div>
+      <div class="metric"><span class="metric-num">25</span><span class="metric-label">analysis documents</span></div>
       <div class="metric"><span class="metric-num">15</span><span class="metric-label">functional requirements</span></div>
       <div class="metric"><span class="metric-num">8</span><span class="metric-label">quality requirements</span></div>
       <div class="metric"><span class="metric-num">23</span><span class="metric-label">test cases</span></div>
@@ -83,9 +84,9 @@
             through the Junior Software Developer programme at Generation Thailand.
           </p>
           <p>
-            I work as a business analyst alongside development: eliciting requirements, defining
-            acceptance criteria, planning acceptance testing, and producing documentation where every
-            requirement can be traced.
+            I work as a business analyst and system analyst alongside development: eliciting
+            requirements, modelling architecture and data, planning tests, and producing documentation
+            where every requirement can be traced.
           </p>
           <p>
             My current interest is analysing and designing AI-enabled systems, with user privacy treated
@@ -96,8 +97,8 @@
           <p class="card-label">Core skills</p>
           <ul class="plain-list">
             <li>Requirements analysis, use cases, business rules</li>
-            <li>Process modelling, user journeys, wireframe review</li>
-            <li>Traceability matrix, acceptance criteria, UAT scripts</li>
+            <li>C4, DFD, ERD, sequence diagrams</li>
+            <li>Traceability matrix, measurable NFRs, risk register</li>
             <li>Next.js, Elysia, Supabase, Google Gemini</li>
           </ul>
         </aside>
@@ -144,7 +145,7 @@
             <p class="card-label">Outcome</p>
             <ul class="plain-list">
               <li>A system covering all 15 functional requirements</li>
-              <li>14 BA documents with 100% traceability</li>
+              <li>25 documents with 100% traceability</li>
               <li>AI consent that is live and can be withdrawn</li>
             </ul>
           </div>
@@ -163,9 +164,19 @@
           <p class="role-doc">D-05 · D-06 · D-07 · D-08</p>
         </article>
         <article class="role-card">
-          <h3>Acceptance</h3>
-          <p>7 acceptance scenarios with pass criteria, testers and recorded outcomes.</p>
-          <p class="role-doc">D-21</p>
+          <h3>Modelling</h3>
+          <p>Swimlanes, C4 at three levels, an ERD with RLS, two DFD levels and 6 message sequences.</p>
+          <p class="role-doc">D-10 · D-11 · D-12 · D-13 · D-14</p>
+        </article>
+        <article class="role-card">
+          <h3>Design</h3>
+          <p>An API contract with 15 endpoints, 7 screen wireframes and 10 architecture decision records.</p>
+          <p class="role-doc">D-15 · D-16 · D-17</p>
+        </article>
+        <article class="role-card">
+          <h3>Quality assurance</h3>
+          <p>8 measurable quality requirements, a register of 11 risks and a test plan with 23 cases.</p>
+          <p class="role-doc">D-18 · D-19 · D-20 · D-21</p>
         </article>
         <article class="role-card">
           <h3>Delivery</h3>
@@ -185,28 +196,10 @@
         </figure>
       </div>
 
-      <div class="diagram-grid" aria-label="Diagrams from the documents">
-        <button class="diagram" type="button" data-full="../assets/img/c4-l2.png">
-          <img src="../assets/img/c4-l2.png" alt="C4 container diagram" loading="lazy" />
-          <span>C4 Level 2</span>
-        </button>
-        <button class="diagram" type="button" data-full="../assets/img/erd.png">
-          <img src="../assets/img/erd.png" alt="Entity relationship diagram" loading="lazy" />
-          <span>ERD</span>
-        </button>
-        <button class="diagram" type="button" data-full="../assets/img/dfd-l0.png">
-          <img src="../assets/img/dfd-l0.png" alt="Data flow diagram, context level" loading="lazy" />
-          <span>DFD Level 0</span>
-        </button>
-        <button class="diagram" type="button" data-full="../assets/img/use-case.png">
-          <img src="../assets/img/use-case.png" alt="Use case diagram" loading="lazy" />
-          <span>Use Case</span>
-        </button>
-      </div>
 
       <div class="project-actions">
         <a class="btn btn-primary" href="../assets/media/deck-en.html" target="_blank" rel="noopener">Open the 22-slide deck</a>
-        <a class="btn btn-ghost" href="../assets/media/RAG-Diary-Docs-EN.zip" download>Download all 14 BA documents</a>
+        <a class="btn btn-ghost" href="../assets/media/RAG-Diary-Docs-EN.zip" download>Download all 25 documents</a>
         <a class="btn btn-ghost" href="https://rag-diary-app.vercel.app" target="_blank" rel="noopener">Open the live app (demo)</a>
       </div>
 
@@ -219,6 +212,74 @@
           documents rather than glossed over.
         </p>
       </aside>
+    </section>
+
+    <section class="section wrap" id="design">
+      <div class="section-head">
+        <p class="kicker">Part two · System design</p>
+        <h2>From requirements to architecture you can check</h2>
+        <p class="section-sub">The other half answers what the system is made of, how the data stays safe, and why each choice was made. All of it sits in documents D-10 to D-20.</p>
+      </div>
+
+      <div class="diagram-grid" aria-label="System design diagrams">
+        <button class="diagram" type="button" data-full="../assets/img/c4-l1.png">
+          <img src="../assets/img/c4-l1.png" alt="C4 system context" loading="lazy" />
+          <span>C4 Level 1</span>
+        </button>
+        <button class="diagram" type="button" data-full="../assets/img/c4-l2.png">
+          <img src="../assets/img/c4-l2.png" alt="C4 containers" loading="lazy" />
+          <span>C4 Level 2</span>
+        </button>
+        <button class="diagram" type="button" data-full="../assets/img/c4-l3.png">
+          <img src="../assets/img/c4-l3.png" alt="C4 components" loading="lazy" />
+          <span>C4 Level 3</span>
+        </button>
+        <button class="diagram" type="button" data-full="../assets/img/erd.png">
+          <img src="../assets/img/erd.png" alt="Entity relationship model" loading="lazy" />
+          <span>ERD</span>
+        </button>
+        <button class="diagram" type="button" data-full="../assets/img/dfd-l0.png">
+          <img src="../assets/img/dfd-l0.png" alt="Context level data flow" loading="lazy" />
+          <span>DFD Level 0</span>
+        </button>
+        <button class="diagram" type="button" data-full="../assets/img/pf01.png">
+          <img src="../assets/img/pf01.png" alt="Write and index an entry" loading="lazy" />
+          <span>PF-01</span>
+        </button>
+        <button class="diagram" type="button" data-full="../assets/img/seq01.png">
+          <img src="../assets/img/seq01.png" alt="Registration and session" loading="lazy" />
+          <span>SEQ-01</span>
+        </button>
+        <button class="diagram" type="button" data-full="../assets/img/seq04.png">
+          <img src="../assets/img/seq04.png" alt="Retrieve, then answer" loading="lazy" />
+          <span>SEQ-04</span>
+        </button>
+      </div>
+
+      <div class="method-grid" style="margin-top: 28px;">
+        <article class="method-card">
+          <span class="method-num">01</span>
+          <h3>Isolation lives in the database</h3>
+          <p>Four RLS policies bound to auth.uid(), so an application bug cannot return another user's row.</p>
+        </article>
+        <article class="method-card">
+          <span class="method-num">02</span>
+          <h3>Vector-first search</h3>
+          <p>1,536-dimension vectors on pgvector with an HNSW index and a keyword weight in one function.</p>
+        </article>
+        <article class="method-card">
+          <span class="method-num">03</span>
+          <h3>A visible privacy boundary</h3>
+          <p>Every path that sends text to the AI provider has a consent check in front of it.</p>
+        </article>
+        <article class="method-card">
+          <span class="method-num">04</span>
+          <h3>Every decision recorded</h3>
+          <p>Ten decision records naming the alternatives considered and why they lost.</p>
+        </article>
+      </div>
+
+      <p class="section-sub" style="margin-top: 22px;">All 11 documents for this half are in the list below (D-10 to D-20) and in the same ZIP.</p>
     </section>
 
     <section class="section wrap" id="experience">
@@ -314,7 +375,7 @@
       <div class="section-head">
         <p class="kicker">All documents</p>
         <h2>Every document, open for inspection</h2>
-        <p class="section-sub">All 14 BA PDFs in English, plus a ZIP. The SA documents live on their own portfolio. The Thai edition is on the Thai page.</p>
+        <p class="section-sub">All 25 PDFs in English, covering both the business analysis and the system design work, plus a ZIP. The Thai edition is on the Thai page.</p>
       </div>
       <div class="doc-groups">
       <div class="doc-group">
@@ -343,9 +404,30 @@
         </ul>
       </div>
       <div class="doc-group">
-        <h3 class="doc-group-title">Acceptance</h3>
+        <h3 class="doc-group-title">Modelling</h3>
         <ul class="doc-list">
-          <li class="doc-row"><span class="doc-code">D-21</span><span class="doc-name">UAT</span><a class="doc-link" href="assets/docs/en/D-21-UAT.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li class="doc-row"><span class="doc-code">D-10</span><span class="doc-name">Process Flows</span><a class="doc-link" href="../assets/docs/en/D-10-PROCESS-FLOWS.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li class="doc-row"><span class="doc-code">D-11</span><span class="doc-name">C4 Architecture</span><a class="doc-link" href="../assets/docs/en/D-11-C4-ARCHITECTURE.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li class="doc-row"><span class="doc-code">D-12</span><span class="doc-name">Data Model</span><a class="doc-link" href="../assets/docs/en/D-12-DATA-MODEL.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li class="doc-row"><span class="doc-code">D-13</span><span class="doc-name">Sequence Diagrams</span><a class="doc-link" href="../assets/docs/en/D-13-SEQUENCE-DIAGRAMS.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li class="doc-row"><span class="doc-code">D-14</span><span class="doc-name">DFD &amp; Privacy</span><a class="doc-link" href="../assets/docs/en/D-14-DFD-PRIVACY.pdf" target="_blank" rel="noopener">PDF</a></li>
+        </ul>
+      </div>
+      <div class="doc-group">
+        <h3 class="doc-group-title">Design</h3>
+        <ul class="doc-list">
+          <li class="doc-row"><span class="doc-code">D-15</span><span class="doc-name">UI Wireframes</span><a class="doc-link" href="../assets/docs/en/D-15-UI-WIREFRAMES.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li class="doc-row"><span class="doc-code">D-16</span><span class="doc-name">API Contract</span><a class="doc-link" href="../assets/docs/en/D-16-API-CONTRACT.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li class="doc-row"><span class="doc-code">D-17</span><span class="doc-name">ADR</span><a class="doc-link" href="../assets/docs/en/D-17-ADR.pdf" target="_blank" rel="noopener">PDF</a></li>
+        </ul>
+      </div>
+      <div class="doc-group">
+        <h3 class="doc-group-title">Quality</h3>
+        <ul class="doc-list">
+          <li class="doc-row"><span class="doc-code">D-18</span><span class="doc-name">NFR Spec</span><a class="doc-link" href="../assets/docs/en/D-18-NFR-SPEC.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li class="doc-row"><span class="doc-code">D-19</span><span class="doc-name">Risk Register</span><a class="doc-link" href="../assets/docs/en/D-19-RISK-REGISTER.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li class="doc-row"><span class="doc-code">D-20</span><span class="doc-name">Test Plan</span><a class="doc-link" href="../assets/docs/en/D-20-TEST-PLAN.pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li class="doc-row"><span class="doc-code">D-21</span><span class="doc-name">UAT</span><a class="doc-link" href="../assets/docs/en/D-21-UAT.pdf" target="_blank" rel="noopener">PDF</a></li>
         </ul>
       </div>
       <div class="doc-group">
@@ -364,7 +446,7 @@
         <div>
           <p class="kicker">Contact</p>
           <h2>Questions, or a conversation about working together</h2>
-          <p class="section-sub">Oranut Suphatamat (Dao) · Business Analyst</p>
+          <p class="section-sub">Oranut Suphatamat (Dao) · Business Analyst / System Analyst</p>
         </div>
         <ul class="contact-list">
           <li><span>Name</span>Oranut Suphatamat (Dao)</li>
@@ -378,9 +460,9 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p>© <span id="year"></span> Oranut Suphatamat · BA portfolio</p>
+      <p>© <span id="year"></span> Oranut Suphatamat · BA / SA portfolio</p>
       <p>Built with HTML and CSS, no build step · deployed on Vercel</p>
-      <p><a href="https://oranut-sa-portfolio.vercel.app">System analysis portfolio →</a> · <a href="https://dao-portfolio-space.vercel.app">Code portfolio →</a></p>
+      <p><a href="https://oranut-ai-portfolio.vercel.app">AI engineering portfolio →</a> · <a href="https://dao-portfolio-space.vercel.app">Code portfolio →</a></p>
     </div>
   </footer>
 

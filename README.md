@@ -9,9 +9,14 @@
 
 ## ขอบเขตของ repo นี้
 
-repo นี้เป็นบ้านของงานวิเคราะห์ธุรกิจ 14 ฉบับ (ไทยและอังกฤษ) ได้แก่ case study,
-product brief, stakeholder matrix, AS-IS/TO-BE, SRS, user stories, use cases,
-business rules, traceability matrix, UAT, roadmap, change request log และ glossary
+repo นี้เป็นบ้านของงานวิเคราะห์ทั้ง 25 ฉบับ (ไทยและอังกฤษ) แบ่งเป็นสองครึ่ง
+
+- ครึ่งวิเคราะห์ธุรกิจ (14 ฉบับ): case study, product brief, stakeholder matrix,
+  AS-IS/TO-BE, SRS, user stories, use cases, business rules, traceability matrix,
+  UAT, roadmap, change request log และ glossary
+- ครึ่งออกแบบระบบ (11 ฉบับ): process flows, C4 สามระดับ, data model, sequence diagrams,
+  DFD และ privacy, wireframes, API contract, ADR, NFR, risk register และ test plan
+
 พร้อมเด็ค 22 สไลด์สองภาษาและไฟล์ ZIP สำหรับดาวน์โหลด
 
 สิ่งที่อยู่ที่อื่น
@@ -19,7 +24,7 @@ business rules, traceability matrix, UAT, roadmap, change request log และ 
 | เนื้อหา | อยู่ที่ |
 | --- | --- |
 | โค้ดของแอป RAG-Diary | repo `rag-diary` |
-| งานออกแบบระบบ 11 ฉบับ | repo `sa-portfolio` |
+| พอร์ตสาย AI Engineer | repo `ai-portfolio` |
 | พอร์ตสาย Web dev (ธีม Star space) | repo `Space-Portfolio` |
 | ต้นฉบับเอกสาร Markdown | โปรเจกต์ RAG-Diary โฟลเดอร์ `docs/` |
 
