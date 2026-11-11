@@ -441,6 +441,7 @@ code {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+  align-items: start;
 }
 
 .doc-group {
@@ -682,4 +683,24 @@ code {
 .timeline-note { margin: 0; font-size: 15px; color: var(--pencil); }
 @media (max-width: 980px) {
   .about-grid { grid-template-columns: 1fr; }
+}
+
+/* document library: two labelled halves */
+.doc-half { margin-top: 38px; }
+.doc-half:first-of-type { margin-top: 8px; }
+.doc-half-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 16px; border-bottom: 2px solid var(--rule);
+  padding-bottom: 10px; margin-bottom: 20px;
+}
+.doc-half-head h3 { margin: 0; font-family: var(--serif); font-size: 21px; }
+.doc-half-head p { margin: 6px 0 0; color: var(--pencil); font-size: 14px; }
+.doc-count {
+  white-space: nowrap; font-size: 13px; color: var(--inkblue);
+  border: 1px solid var(--rule); border-radius: 999px; padding: 4px 12px;
+}
+.doc-group-desc { margin: 0 0 10px; font-size: 13px; color: var(--pencil); line-height: 1.55; }
+.doc-group-title span { color: var(--pencil); font-weight: 400; }
+@media (max-width: 640px) {
+  .doc-half-head { flex-direction: column; align-items: flex-start; gap: 8px; }
 }
