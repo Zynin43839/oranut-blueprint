@@ -5,7 +5,6 @@
 
 - ฉบับไทย: https://oranut-ba-portfolio.vercel.app
 - ฉบับอังกฤษ: https://oranut-ba-portfolio.vercel.app/en/
-- พอร์ตสาย Web dev (แยกกันคนละเว็บ): https://dao-portfolio-space.vercel.app
 
 ## ขอบเขตของ repo นี้
 
@@ -25,7 +24,6 @@ repo นี้เป็นบ้านของงานวิเคราะห
 | --- | --- |
 | โค้ดของแอป RAG-Diary | repo `rag-diary` |
 | พอร์ตสาย AI Engineer | repo `ai-portfolio` |
-| พอร์ตสาย Web dev (ธีม Star space) | repo `Space-Portfolio` |
 | ต้นฉบับเอกสาร Markdown | โปรเจกต์ RAG-Diary โฟลเดอร์ `docs/` |
 
 ## โครงสร้าง
