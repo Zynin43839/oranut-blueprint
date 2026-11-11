@@ -3,8 +3,8 @@
 เว็บพอร์ตโฟลิโอสาย Business Analyst / System Analyst แบบ static ไม่ต้อง build
 ใช้ HTML + CSS + JavaScript ล้วน และ deploy ขึ้น Vercel ได้ทันที
 
-- ฉบับไทย: https://oranut-ba-portfolio.vercel.app
-- ฉบับอังกฤษ: https://oranut-ba-portfolio.vercel.app/en/
+- ฉบับไทย: https://oranut-blueprint.vercel.app
+- ฉบับอังกฤษ: https://oranut-blueprint.vercel.app/en/
 
 ## ขอบเขตของ repo นี้
 
@@ -23,13 +23,13 @@ repo นี้เป็นบ้านของงานวิเคราะห
 | เนื้อหา | อยู่ที่ |
 | --- | --- |
 | โค้ดของแอป RAG-Diary | repo `rag-diary` |
-| พอร์ตสาย AI Engineer | repo `ai-portfolio` |
+| พอร์ตสาย AI Engineer | repo `oranut-signal` |
 | ต้นฉบับเอกสาร Markdown | โปรเจกต์ RAG-Diary โฟลเดอร์ `docs/` |
 
 ## โครงสร้าง
 
 ```
-ba-portfolio/
+oranut-blueprint/
 ├── index.html          หน้าภาษาไทย
 ├── en/index.html       หน้าภาษาอังกฤษ
 ├── styles.css          ธีม Marginalia (กระดาษและหมึก)
@@ -45,7 +45,7 @@ ba-portfolio/
 ## ดูในเครื่อง
 
 ```powershell
-cd ba-portfolio
+cd oranut-blueprint
 python -m http.server 8080
 # เปิด http://localhost:8080
 ```
@@ -56,7 +56,7 @@ python -m http.server 8080
 npx vercel --prod
 ```
 
-โปรเจกต์บน Vercel ชื่อ `oranut-ba-portfolio` (ผูกไว้ใน `.vercel/project.json` แล้ว)
+โปรเจกต์บน Vercel ชื่อ `oranut-blueprint` (ผูกไว้ใน `.vercel/project.json` แล้ว)
 
 ## อัปเดตเอกสารและเด็ค
 
